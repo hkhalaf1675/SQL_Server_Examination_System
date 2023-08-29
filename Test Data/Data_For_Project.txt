@@ -1,0 +1,388 @@
+
+------------------------            c #   Question      --------------------
+
+--------------------------        MCQ           ----------------
+
+1. How many Bytes are stored by ‘Long’ Data type in C# .net?
+a) 8
+b) 4
+c) 2
+d) 1
+Answer: a .
+
+2. Choose “.NET class” name from which data type “UInt” is derived?
+a) System.Int16
+b) System.UInt32
+c) System.UInt64
+d) System.UInt16
+
+Answer: b .
+
+3. Correct Declaration of Values to variables ‘a’ and ‘b’?
+a) int a = 32, b = 40.6;
+b) int a = 42; b = 40;
+c) int a = 32; int b = 40;
+d) int a = b = 42;
+
+Answer: c ..
+
+4. Which data type should be more preferred for storing a simple number like 35 to improve execution speed of a program?
+a) sbyte
+b) short
+c) int
+d) long
+
+Answer: a
+
+5. Correct way to assign values to variable ‘c’ when int a=12, float b=3.5, int c;
+a) c = a + b;
+b) c = a + int(float(b));
+c) c = a + convert.ToInt32(b);
+d) c = int(a + b);
+
+Answer: c
+
+6. Which of the following is used to define the member of a class externally?
+a) :
+b) ::
+c) #
+d) none of the mentioned
+
+Answer: b
+
+7. The operator used to access member function of a class?
+a) :
+b) ::
+c) .
+d) #
+View Answer
+
+Answer: c
+
+8. What is the most specified using class declaration?
+a) type
+b) scope
+c) type & scope
+d) none of the mentioned
+
+Answer: c
+
+9. Which of the following statements about objects in “C#” is correct?
+a) Everything you use in C# is an object, including Windows Forms and controls
+b) Objects have methods and events that allow them to perform actions
+c) All objects created from a class will occupy equal number of bytes in memory
+d) All of the mentioned
+
+Answer: d  ..
+
+10. “A mechanism that binds together code and data in manipulates, and keeps both safe from outside interference and misuse. In short it isolates a particular code and data from all other codes and data. A well-defined interface controls access to that particular code and data.”
+a) Abstraction
+b) Polymorphism
+c) Inheritance
+d) Encapsulation
+
+Answer: d
+
+11. The data members of a class by default are?
+a) protected, public
+b) private, public
+c) private
+d) public
+View Answer
+
+Answer: c
+
+12. Which of these is used as a default specifier for a member of the class if no access specifier is used for it?
+a) private
+b) public
+c) public, within its own class
+d) protected
+View Answer
+
+Answer: a
+
+12. Which of these is used to access members of class before the object of that class is created?
+a) public
+b) private
+c) static
+d) protected
+
+Answer: c
+
+13. Which of these base classes are accessible to the derived class members?
+a) static
+b) protected
+c) private
+d) Shared
+View Answer
+
+Answer: b
+
+14. What is the process by which we can control parts of a program that can access the members of a class?
+a) Polymorphism
+b) Abstraction
+c) Encapsulation
+d) Recursion
+View Answer
+
+Answer: c
+
+15. Accessibility modifier defined in a class are?
+a) public, private, protected
+b) public, internal, protected internal
+c) public, private, internal, protected internal
+d) public, private, protected, internal, protected internal
+View Answer
+
+Answer: d
+
+16. Choose the statements which are false in nature?
+a) The base class member functions can access public member functions of derived class
+b) An object of a derived class cannot access private member of the base class
+c) Private members of the base class cannot be accessed by derived class member functions or objects of derived class
+d) None of the mentioned
+View Answer
+
+Answer: a
+
+17. Which of these access specifiers must be used for main() method?
+a) private
+b) public
+c) protected
+d) none of the mentioned
+View Answer
+
+Answer: a
+
+--------------------------------------------------    true or false     ------------------------
+
+1.Multiple inheritance is different from multiple levels of inheritance.
+answer : t .
+
+
+2.An object of a derived class cannot access private members of base class.
+answer : t .
+
+
+3.The way a derived class member function can access base class public members, the base class member functions can access public member functions of derived class.
+
+answer : f .
+
+4.There is no private or protected inheritance in C#.NET.
+
+answer : t .
+
+5.We can derive a class from a base class even if the base class's source code is not available.
+answer : t .
+
+6.If a base class contains a member function func(), and a derived class does not contain a function with this name, an object of the derived class cannot access func().
+answer : f .
+
+7.If a base class and a derived class each include a member function with the same name, the member function of the derived class will be called by an object of the derived class
+answer : t .
+
+8.The size of a derived class object is equal to the sum of sizes of data members in base class and the derived class.
+answer : t .
+
+9.Private members of base class cannot be accessed by derived class member functions or objects of derived class.
+answer : t .
+
+10.A class D can be derived from a class C, which is derived from a class B, which is derived from a class A.
+answer : t .
+
+
+----------------------------------------      Java     -------------------------------
+
+
+----------------------------------------      MCQ      -------------------------------
+
+
+1. Who invented Java Programming?
+a) Guido van Rossum
+b) James Gosling
+c) Dennis Ritchie
+d) Bjarne Stroustrup
+
+
+Answer: b
+
+2. Which statement is true about Java?
+a) Java is a sequence-dependent programming language
+b) Java is a code dependent programming language
+c) Java is a platform-dependent programming language
+d) Java is a platform-independent programming language
+
+
+Answer: d
+
+3. Which component is used to compile, debug and execute the java programs?
+a) JRE
+b) JIT
+c) JDK
+d) JVM
+
+
+Answer: c
+
+4. Which one of the following is not a Java feature?
+a) Object-oriented
+b) Use of pointers
+c) Portable
+d) Dynamic and Extensible
+
+
+Answer: b
+
+5. Which of these cannot be used for a variable name in Java?
+a) identifier & keyword
+b) identifier
+c) keyword
+d) none of the mentioned
+
+
+Answer: c
+
+
+6. What is the extension of java code files?
+a) .js
+b) .txt
+c) .class
+d) .java
+
+
+Answer: d
+
+7. Which environment variable is used to set the java path?
+a) MAVEN_Path
+b) JavaPATH
+c) JAVA
+d) JAVA_HOME
+
+Answer: d
+
+8. Which of the following is not an OOPS concept in Java?
+a) Polymorphism
+b) Inheritance
+c) Compilation
+d) Encapsulation
+
+Answer: c
+
+
+9. What is not the use of “this” keyword in Java?
+a) Referring to the instance variable when a local variable has the same name
+b) Passing itself to the method of the same class
+c) Passing itself to another method
+d) Calling another constructor in constructor chaining
+
+Answer: b
+
+10. Which of the following is a type of polymorphism in Java Programming?
+a) Multiple polymorphism
+b) Compile time polymorphism
+c) Multilevel polymorphism
+d) Execution time polymorphism
+
+Answer: b
+
+11. What is Truncation in Java?
+a) Floating-point value assigned to a Floating type
+b) Floating-point value assigned to an integer type
+c) Integer value assigned to floating type
+d) Integer value assigned to floating type
+
+
+Answer: b
+
+
+12. What is the extension of compiled java classes?
+a) .txt
+b) .js
+c) .class
+d) .java
+
+Answer: c
+
+13. Which exception is thrown when java is out of memory?
+a) MemoryError
+b) OutOfMemoryError
+c) MemoryOutOfBoundsException
+d) MemoryFullException
+
+Answer: b
+
+14. Which of these are selection statements in Java?
+a) break
+b) continue
+c) for()
+d) if()
+
+Answer: d
+
+15. Which of these keywords is used to define interfaces in Java?
+a) intf
+b) Intf
+c) interface
+d) Interface
+
+Answer: c
+
+16. Which of the below is not a Java Profiler?
+a) JProfiler
+b) Eclipse Profiler
+c) JVM
+d) JConsole
+
+Answer: c
+
+17. Which of these statements is incorrect about Thread?
+a) start() method is used to begin execution of the thread
+b) run() method is used to begin execution of a thread before start() method in special cases
+c) A thread can be formed by implementing Runnable interface only
+d) A thread can be formed by a class that extends Thread class
+View Answer
+
+Answer: b
+
+
+---------------------------------------------    true  o false      -------------------------------------
+
+
+---------------------------------------------------------------------------------------------------------
+
+1.Enumerations are a special data type in Java that allows for a variable to be set to a predefined variable.
+
+Answer :True
+
+2.int x[] = new int[]{10,20,30};<br><br>Arrays can also be created and initialize as in above statement.
+Answer :true
+
+3.In an instance method or a constructor, "this" is a reference to the current object.
+Answer :true
+
+4.Garbage Collection is manual process.
+Answer :false
+
+5.Constructor overloading is not possible in Java.
+Answer :false
+
+6.Assignment operator is evaluated Left to Right.
+Answer :false
+
+7.Java programming is not statically-typed, means all variables should not first be declared before they can be used.
+Answer :false
+
+8.In Java SE 7 and later, underscore characters "_" can appear anywhere between digits in a numerical literal
+
+Answer :true
+
+9.Variable name can begin with a letter, "$", or "_".
+Answer :true
+
+Interfaces can be instantiated.
+Answer :false
+
+
+
+
+

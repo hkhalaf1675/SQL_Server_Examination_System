@@ -1,0 +1,35 @@
+1,How many Bytes are stored by Long Data type in C# .net?,MCQ,a,csh20
+2,Choose .NET class name from which data type UInt is derived?,MCQ,b,csh20
+3,Correct Declaration of Values to variables a and b?,MCQ,c,csh20
+4,Which data type should be more preferred for storing a simple number like 35 to improve execution speed of a program?,MCQ,a,csh20
+5,Correct way to assign values to variable c when int a=12 and float b=3.5 and int c.,MCQ,c,csh20
+6,Which of the following is used to define the member of a class externally?,MCQ,b,csh20
+7,The operator used to access member function of a class?,MCQ,c,csh20
+8,What is the most specified using class declaration?,MCQ,c,csh20
+9,Which of the following statements about objects in C# is correct?,MCQ,d,csh20
+10,A mechanism that binds together code and data in manipulates and keeps both safe from outside interference and misuse.,MCQ,d,csh20
+11,The data members of a class by default are?,MCQ,c,csh20
+12,Which of these is used as a default specifier for a member of the class if no access specifier is used for it?,MCQ,a,csh20
+13,Which of these is used to access members of class before the object of that class is created?,MCQ,c,csh20
+14,Which of these base classes are accessible to the derived class members?,MCQ,b,csh20
+15,What is the process by which we can control parts of a program that can access the members of a class?,MCQ,c,csh20
+16,Accessibility modifier defined in a class are?,MCQ,d,csh20
+17,Choose the statements which are false in nature?,MCQ,a,csh20
+18,Which of these access specifiers must be used for main() method?,MCQ,a,csh20
+19,Multiple inheritance is different from multiple levels of inheritance.,True&False,t,csh20
+20,An object of a derived class cannot access private members of base class.,True&False,t,csh20
+21,The way a derived class member function can access base class public members and the base class member functions can access public member functions of derived class.,True&False,f,csh20
+22,There is no private or protected inheritance in C#.NET.,True&False,t,csh20
+23,We can derive a class from a base class even if the base class's source code is not available.,True&False,t,csh20
+24,If a base class contains a member function func() and a derived class does not contain a function with this name and an object of the derived class cannot access func().,True&False,f,csh20
+25,If a base class and a derived class each include a member function with the same name and the member function of the derived class will be called by an object of the derived class.,True&False,t,csh20
+26,The size of a derived class object is equal to the sum of sizes of data members in base class and the derived class.,True&False,t,csh20
+27,Private members of base class cannot be accessed by derived class member functions or objects of derived class.,True&False,t,csh20
+28,A class D can be derived from a class C and which is derived from a class B and which is derived from a class A.,True&False,t,csh20
+
+
+
+
+
+
+
