@@ -1,0 +1,32 @@
+What is C#?
+What are the features of C#?
+What is the difference between value types and reference types in C#?
+What is the difference between a class and an object in C#?
+How do you declare a variable in C#?
+What are the different access modifiers in C#?
+What is the purpose of the "using" statement in C#?
+What is the difference between "const" and "readonly" in C#?
+How do you handle exceptions in C#?
+What is the difference between "==" and "equals()" in C#?
+
+
+InstructorFunctionality.addQuestion '29204372600011','What is C#?','Text',null,'csh20',null,null,null,null
+go
+InstructorFunctionality.addQuestion '29204372600011','What are the features of C#?','Text',null,'csh20',null,null,null,null
+go
+InstructorFunctionality.addQuestion '29204372600011','What is the difference between value types and reference types in C#?','Text',null,'csh20',null,null,null,null
+go
+InstructorFunctionality.addQuestion '29204372600011','What is the difference between a class and an object in C#?','Text',null,'csh20',null,null,null,null
+go
+InstructorFunctionality.addQuestion '29204372600011','How do you declare a variable in C#?','Text',null,'csh20',null,null,null,null
+go
+InstructorFunctionality.addQuestion '29204372600011','What are the different access modifiers in C#?','Text',null,'csh20',null,null,null,null
+go
+InstructorFunctionality.addQuestion '29204372600011','What is the purpose of the "using" statement in C#?','Text',null,'csh20',null,null,null,null
+go
+InstructorFunctionality.addQuestion '29204372600011','What is the difference between "const" and "readonly" in C#?','Text',null,'csh20',null,null,null,null
+go
+InstructorFunctionality.addQuestion '29204372600011','How do you handle exceptions in C#?','Text',null,'csh20',null,null,null,null
+go
+InstructorFunctionality.addQuestion '29204372600011','What is the difference between "==" and "equals()" in C#?','Text',null,'csh20',null,null,null,null
+go

@@ -1,21 +1,20 @@
+'29204372600011','Hala Mahmoud ','Mansoura, Egypt       ','01098765431',
 '29101234500002','Fatima Ali   ','Giza, Egypt           ','01123456781',2,1
-'29009876500003','Mohamed Ahmed','Alexandria, Egypt     ','01098765431',1,2
-'29345678900004','Aya Mahmoud  ','Luxor, Egypt          ','01567894321',2,2
-'29456789000005','Sara Khalid  ','Aswan, Egypt          ','01012345671',1,1
+'29009876500003','Mohamed Ahmed','Alexandria, Egypt     ','01098765431',1,2--manager Alex
+'29345678900004','Aya Mahmoud  ','Luxor, Egypt          ','01567894321',2,2--manager luxor
+'29456789000005','Sara Khalid  ','Aswan, Egypt          ','01012345671',1,1--manager aswan
 
-addNewInstructor '29567890100006','Mahmoud Ahmed','Mansoura, Egypt       ','01187654321',2,1
+TrainingManagerFunctionality.addNewInstructor '29567890100006','Mahmoud Ahmed','Mansoura, Egypt       ','01187654321','Security','Luxor'
 go
-addNewInstructor '29678901200007','Yara Ali     ','Port Said, Egypt      ','01234567891',1,2
+TrainingManagerFunctionality.addNewInstructor '29678901200007','Yara Ali     ','Port Said, Egypt      ','01234567891','Security','Alexandria'
 go
-addNewInstructor '29789012300008','Ahmed Mohamed','Sharm El Sheikh, Egypt','01098765431',2,2
+TrainingManagerFunctionality.addNewInstructor '29789012300008','Ahmed Mohamed','Sharm El Sheikh, Egypt','01098765431','Operations','Alexandria'
 go
-addNewInstructor '29890123400009','Nour Ibrahim ','Tanta, Egypt          ','01123456781',1,1
+TrainingManagerFunctionality.addNewInstructor '29890123400009','Nour Ibrahim ','Tanta, Egypt          ','01123456781','Operations','Luxor'
 go
-addNewInstructor '29901234500010','Ali Hassan   ','Hurghada, Egypt       ','01234567891',2,1
+TrainingManagerFunctionality.addNewInstructor '29901234500010','Ali Hassan   ','Hurghada, Egypt       ','01234567891','Artificial intelligence','Luxor'
 go
-addNewInstructor '29204372600011','Hala Mahmoud ','Mansoura, Egypt       ','01098765431',1,2
+TrainingManagerFunctionality.addNewInstructor '29101234500012','Mohamed Ali  ','Alexandria, Egypt     ','01123456781','Artificial intelligence','Aswan'
 go
-addNewInstructor '29101234500012','Mohamed Ali  ','Alexandria, Egypt     ','01123456781',2,2
-go
-addNewInstructor '29009876500013','Salma Ahmed  ','Cairo, Egypt          ','01234567891',1,1
+TrainingManagerFunctionality.addNewInstructor '29009876500013','Salma Ahmed  ','Cairo, Egypt          ','01234567891','Operations','Aswan'
 go

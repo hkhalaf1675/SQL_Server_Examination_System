@@ -15,12 +15,11 @@ as begin
 	from inserted;
 	begin
 		declare @total int
+		select @total = ISNULL(sum([qs_dgree]),0) from [Inst_Course_Exam] where ex_code = @crs_code;
 		
-		select @total = ISNULL(sum([qs_dgree]),0) from [Inst_Course_Exam];
-
-		select @course_Degree=crs_max_dgree from Course;
-
-		if (@total + @Amount) <= @course_Degree
+		select @course_Degree=crs_max_dgree from Course where crs_code=@crs_code;
+	
+		if (@total + @Amount) < @course_Degree
 			insert into [Inst_Course_Exam] Values(@ex_code, @inst_SSN,@crs_code,@qs_Id,@qs_dgree)
 
 		else
@@ -51,22 +50,23 @@ begin
 	from inserted;
 
 			begin
-				declare @total int
+				declare @total int,@deletedDegree int ;
 		
-				select @total = ISNULL(sum([qs_dgree]),0) from [Inst_Course_Exam];
+				select @total = ISNULL(sum([qs_dgree]),0) from [Inst_Course_Exam] where ex_code=@crs_code;
 				--@total = @total - @old_Ques_Degree;
-				select @course_Degree=crs_max_dgree from Course;
-
-				if (@total + @Amount) <= @course_Degree
+				select @course_Degree=crs_max_dgree from Course where crs_code=@crs_code;
+				select @deletedDegree=qs_dgree from Inst_Course_Exam where qs_id=@Old_qs_id
+				set @total=@total-@deletedDegree
+				if (@total + @Amount) < @course_Degree
 					begin
-					update Inst_Course_Exam
-					set qs_Id=@New_qs_Id,qs_dgree=@qs_dgree
-					where ex_code=@ex_code and qs_Id=@Old_qs_Id
-					print'Question is updated successfully .';
+						update Inst_Course_Exam
+						set qs_Id=@New_qs_Id,qs_dgree=@qs_dgree
+						where ex_code=@ex_code and qs_Id=@Old_qs_Id
+						print'Question is updated successfully .';
 					end	
 				else
-					print'Question Degree Exceeds the maximum degree 
-					for this course or this question not found';
+					  print'Question Degree Exceeds the maximum degree 
+					  for this course or this question not found';
 			end
 
 end

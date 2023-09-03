@@ -1,9 +1,20 @@
-CS101,Introduction to Computer Science,This course introduces the fundamentals of computer science.,100,50,29009876500013
+CS101,Introduction to Computer Science,This course introduces the fundamentals of computer science.,100,50,29789012300008
 MT202,Calculus II,This course covers advanced topics in calculus.,100,50,29101234500012
-op123,Object oriented programming,,100,50,34567890123456
+op123,Object oriented programming,,100,50,29204372600011
 csh20,C sharp ,This course provides an introduction to general programming language.,100,50,29204372600011
 TW305,Technical Writing,This course focuses on developing technical writing skills.,100,50,29901234500010
 js205,javascript,This course global javascript .,100,50,29890123400009
 cs209,CSS,,100,50,29789012300008
-sq405,SQL server,,100,50,29678901200007
+sq405,SQL server,,100,50,29901234500010
 NT145,Network,,100,50,29567890100006
+
+TrainingManagerFunctionality.Add_Course 'sq405','SQL server',null,100,50,'29901234500010'
+go
+TrainingManagerFunctionality.Add_Course 'NT145','Network',null,100,50,'29567890100006'
+go
+TrainingManagerFunctionality.Add_Course 'MT202','Calculus II',null,100,50,'29101234500012'
+go
+TrainingManagerFunctionality.Add_Course 'CS101','Introduction to Computer Science',null,100,50,'29789012300008'
+go
+TrainingManagerFunctionality.Add_Course 'op123','Object oriented programming',null,100,50,'29204372600011'
+go

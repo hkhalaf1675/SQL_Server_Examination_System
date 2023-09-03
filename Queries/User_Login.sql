@@ -20,3 +20,27 @@
 ---> 4- then give the user the permissions on database
 ---> 5- then go to schema and select connect the user with the spacific schema
 ---> 6- then give the user the permissions to spacific objects or tables
+
+
+
+
+
+
+------>>>> For Student 
+---Student
+---12345
+
+--------->>> For Instructor
+----Instructor
+----123456
+
+-------->>>> TrainingManager
+---TraningManager
+---12345
+
+---------->>>Admin
+---admin
+---123456
+
+
+

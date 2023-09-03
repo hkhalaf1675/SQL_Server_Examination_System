@@ -1,6 +1,13 @@
 WD,Web Development,29101234500002
 MD,Mobile Development,29009876500003
 AI,Artificial Intelligence,29345678900004
-DS,Data Science,29456789000005
-CC,Cloud Computing,29567890100006
-SE,Software Engineering,29678901200007
+DS,Data Science,29901234500010--
+CC,Cloud Computing,29567890100006--
+SE,Software Engineering,29789012300008--
+
+TrainingManagerFunctionality.Add_Track 'SE','Software Engineering','29789012300008'
+go
+TrainingManagerFunctionality.Add_Track 'DS','Data Science','29901234500010'
+go
+TrainingManagerFunctionality.Add_Track 'CC','Cloud Computing','29567890100006'
+go

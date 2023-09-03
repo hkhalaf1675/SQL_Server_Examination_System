@@ -7,7 +7,7 @@ use ExaminationSystem_2
 
 ----->>> Question
 --> add new question
-create or alter procedure InstructorFunctionality.addQuestion @inst_SSN char(14),@question varchar(255),@qs_type varchar(20),@correct_answer varchar(100),
+create or alter procedure InstructorFunctionality.addQuestion @inst_SSN char(20),@question varchar(255),@qs_type varchar(20),@correct_answer varchar(100),
 	@crs_code varchar(5),@choice_num1 varchar(100),@choice_num2 varchar(100),@choice_num3 varchar(100),@choice_num4 varchar(100)
 as
 	begin try
@@ -15,45 +15,52 @@ as
 		begin
 			if exists(select * from Course where crs_code = @crs_code and inst_SSN = @inst_SSN)
 			begin
-				if @qs_type = 'MCQ'
+				if @qs_type in ('MCQ','True&False','Text')
 				begin
-					if @choice_num1 is not null and @choice_num2 is not null and @choice_num3 is not null and @choice_num4 is not null
+				---
+					if @qs_type = 'MCQ'
+					begin
+						if @choice_num1 is not null and @choice_num2 is not null and @choice_num3 is not null and @choice_num4 is not null
+						begin
+							insert into Question(qs_text,qs_type,correct_answer,crs_code,inst_SSN)
+							values(@question,@qs_type,@correct_answer,@crs_code,@inst_SSN)
+
+							insert into Choice
+							values(@choice_num1,@@IDENTITY,'a'),
+									(@choice_num2,@@IDENTITY,'b'),
+									(@choice_num3,@@IDENTITY,'c'),
+									(@choice_num4,@@IDENTITY,'d')
+						end
+						else
+							print 'You must enter the four choices and the correct answer must be one of them'
+					end
+					else
 					begin
 						insert into Question(qs_text,qs_type,correct_answer,crs_code,inst_SSN)
 						values(@question,@qs_type,@correct_answer,@crs_code,@inst_SSN)
-
-						insert into Choice
-						values(@choice_num1,@@IDENTITY,'a'),
-								(@choice_num2,@@IDENTITY,'b'),
-								(@choice_num3,@@IDENTITY,'c'),
-								(@choice_num4,@@IDENTITY,'d')
 					end
-					else
-						select 'You must enter the four choices and the correct answer must be one of them' MSG
+				---
 				end
 				else
-				begin
-					insert into Question(qs_text,qs_type,correct_answer,crs_code)
-					values(@question,@qs_type,@correct_answer,@crs_code)
-				end
+					print 'The Question Type must be one of {MCQ,True&False,Text}'
 			end
 			else
-				select 'there no instructor with that SSN or the instructor do not teach this course' MSG
+				print 'there no instructor with that SSN or the instructor do not teach this course'
 		end
 		else
-			select 'There no course with that code' as MSG
+			print 'There no course with that code'
 	end try
 	begin catch
 		rollback
-		select ERROR_NUMBER(),ERROR_MESSAGE()
+		print ERROR_MESSAGE()
 	end catch
 ----------------------
-InstructorFunctionality.addQuestion 29204372600000,'An object of a derived class cannot access private members of base class.',
+InstructorFunctionality.addQuestion '29204372600011','An object of a derived class cannot access private members of base class.',
    'True&False','True','csh20',null,null,null,null
 
 InstructorFunctionality.addQuestion 45678901234567,'Choose “.NET class” name from which data type “UInt” is derived','MCQ','System.UInt32','csh20'
 	,'System.Int16','System.UInt32','System.UInt64','System.UInt16'
-
+select * from Course
 ---------------------------------
 -->> delete question
 create or alter procedure InstructorFunctionality.deleteQuestion @inst_SSN char(14),@question_id int
@@ -75,11 +82,11 @@ as
 				print 'there is no instructor with that SSN or the instructor did not add this question'
 		end
 		else
-			select 'there no question with that id' MSG
+			print 'there no question with that id'
 	end try
 	begin catch
 		rollback
-		select ERROR_NUMBER(),ERROR_MESSAGE()
+		print ERROR_MESSAGE()
 	end catch
 -----------
 InstructorFunctionality.deleteQuestion 29204372600011,1013
@@ -115,7 +122,7 @@ as
 			print 'There is no question with that id number'
 	end try
 	begin catch
-		select ERROR_NUMBER(),ERROR_MESSAGE()
+		print ERROR_MESSAGE()
 	end catch
 -----------------
 InstructorFunctionality.updateQuestionOrCorrectAnswer 29204372600011,1013,'correct answer','a'
@@ -153,7 +160,7 @@ as
 			print 'There is no question with that id number'
 	end try
 	begin catch
-		select ERROR_NUMBER(),ERROR_MESSAGE()
+		print ERROR_MESSAGE()
 	end catch
 ----------
 InstructorFunctionality.updateQuestionChoice 45678901234567,1015,'f','Console.Int16'
@@ -172,7 +179,7 @@ as
 		PIVOT(max(choice) for choice_num in ([a],[b],[c],[d])) as PVT
 	end try
 	begin catch
-		select ERROR_NUMBER(),ERROR_MESSAGE()
+		print ERROR_MESSAGE()
 	end catch
 --------------------------
 InstructorFunctionality.showAllQuestionChoices csh20

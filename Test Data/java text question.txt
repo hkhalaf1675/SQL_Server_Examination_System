@@ -1,0 +1,10 @@
+What is Java?
+What are the main features of Java?
+What is the difference between JDK, JRE, and JVM?
+What is the difference between an object and a class in Java?
+Explain the principles of object-oriented programming (OOP).
+What are the access modifiers in Java?
+What is method overloading and method overriding in Java?
+What is the difference between checked and unchecked exceptions?
+What is the difference between an abstract class and an interface in Java?
+How does Java support multithreading?
